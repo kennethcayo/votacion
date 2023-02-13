@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Login to account</title>
+</head>
+
+<body>
+  <!-- NAVIGATION BAR -->
+  <nav class="light-blue darken-4">
+    <a href="#" class="brand-logo center">CNE - Votacion Electronica</a>
+  </nav>
+  <!-- END OF NAVIGATION BAR -->
+
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Iniciar Sesion</span>
+        <div class="row">
+          <form action="/vote" method="POST">
+            <div class="input-field col s12">
+              <input id="username" type="text" name="username">
+              <label for="username">Usuario</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="password" type="password" name="password">
+              <label for="password">Contraseña</label>
+            </div>
+            <div class="form-group">
+              <p>
+                <label>
+                  <input type="checkbox" id="rememberUser" />
+                  <span>Recordar usuario</span>
+                </label>
+              </p>
+            </div>
+            <div class="center-align">
+              <button class="btn waves-effect waves-light light-blue darken-3" type="submit">Iniciar Sesion</button>
+              <a class="btn waves-effect waves-light light-blue darken-1" href="signup.html">Registrarme</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+</body>
+
+</html>

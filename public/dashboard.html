@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/vote.css" />
+    <title>Dashboard de Elecciones</title>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="light-blue darken-4">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo center">CNE</a>
+        </div>
+    </nav>
+    <!-- END OF NAVIGATION BAR -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div class="card light-blue darken-4">
+                    <div class="card-content white-text">
+                        <span class="card-title">Online</span>
+                        <p id="n-users">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card indigo lighten-2">
+                    <div class="card-content white-text">
+                        <span class="card-title">
+                            <img class="circle" src="./img/candidato-2.png" width="100px"  alt="Image of Kenneth Cayo">
+                            Kenneth Cayo
+                        </span>
+                        <p id="VotesKennethCayo"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card green lighten-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">
+                            <img class="circle" src="./img/candidato-3.png" width="100px" alt="Imagen de Ericka">
+                            Ericka Anchundia
+                        </span>
+                        <p id="VotesErickaA"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card orange lighten-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">
+                            <img class="circle" src="./img/candidato-1.png" width="100px" alt="Image of Kenneth Cayo">
+                            Adonys Bravo
+                        </span>
+                        <p id="VotesAdonysB"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+
+</html>

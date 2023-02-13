@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- MATERIAL DESIGN ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <title>Register</title>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="light-blue darken-4">
+        <div class="nav-wrapper">
+            <a class="brand-logo center" href="/">CNE - Votacion Electronica</a>
+        </div>
+    </nav>
+    <!-- END OF NAVIGATION BAR -->
+
+    <div class="container container-login col-md-4 mt-5 mx-auto">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title center-align">Registrate para ejercer el voto</span>
+                <form action="/register" method="POST" id="register">
+                    <div class="input-field">
+                        <i class="material-icons prefix">person</i>
+                        <input id="username" type="text" name="username" required>
+                        <label for="username">Ingresa tu nombre de usuario</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="password" type="password" name="password" required>
+                        <label for="password">Contraseña</label>
+                    </div>
+                    <div class="card-action center-align">
+                        <button class="btn waves-effect waves-light light-blue darken-3" type="submit" form="register"
+                            value="Register">Registrarme</button>
+                        <a class="btn waves-effect waves-light light-blue darken-1" href="index.html"
+                            role="button">Iniciar Sesion</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
